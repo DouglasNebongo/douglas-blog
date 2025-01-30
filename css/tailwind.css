@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
+}
+
+.data-footnote-backref {
+  @apply no-underline;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+
+.katex-display {
+  overflow: auto hidden;
+}
+
+.content-header-link {
+  opacity: 0;
+  margin-left: -24px;
+  padding-right: 4px;
+}
+
+.content-header:hover .content-header-link,
+.content-header-link:hover {
+  opacity: 1;
+}
+
+.linkicon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* hamburger menu button: https://css-tricks.com/line-animated-hamburger-menu/ */
+.line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 6;
+  transition:
+    stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+}
+.opened.line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+}
+.opened.line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+}
+.opened.line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-weight: 500;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.card-info {
+  padding: 1.5rem;
+  color: #333;
+}
+
+.card-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-info h5 {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-gradient {
+  height: 0.375rem;
+  background: linear-gradient(90deg, #48c78e, #1e90ff, #9370db);
+}
+
+.profile-card-container {
+  margin-left: -1rem; /* Adjust the margin to bring the ProfileCard closer */
+}
+
+.grid-with-line {
+  position: relative;
+}
+
+/* Apply the line only for screens wider than the sm breakpoint */
+@media (min-width: 640px) {
+  .grid-with-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #e5e7eb; /* Light gray color for the line */
+    transform: translateX(-50%);
+  }
+
+  /* Dark mode support */
+  .dark .grid-with-line::after {
+    background-color: #374151; /* Dark gray color for the line in dark mode */
+  }
+}
+
+/*2 */
+
+/* Mobile layout */
+.project-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+/* Vertical line for mobile */
+@media (max-width: 639px) {
+  .project-links-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #e5e7eb; /* Light gray color for the line */
+    transform: translateX(-50%);
+  }
+
+  /* Dark mode support for the line */
+  .dark .project-links-container::after {
+    background-color: #374151; /* Dark gray color for the line in dark mode */
+  }
+
+  /* Adjust layout for mobile */
+  .links-section {
+    width: 50%;
+    padding-right: 1rem; /* Add spacing to the right of links */
+  }
+
+  .built-with-section {
+    width: 50%;
+    padding-left: 1rem; /* Add spacing to the left of built-with */
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 640px) {
+  .project-links-container::after {
+    display: none; /* Hide the line on desktop */
+  }
+
+  /* Reset mobile-specific styles */
+  .links-section,
+  .built-with-section {
+    width: auto;
+    padding: 0;
+  }
+}
