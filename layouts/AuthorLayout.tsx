@@ -107,7 +107,7 @@ export default function AuthorLayout({ children, content }: Props) {
             </p>
             <p className="text-gray-500 dark:text-gray-200">
               See my{' '}
-              <a target="_blank" href="/">
+              <a target="_blank" href="https://github.com/DouglasNebongo/douglas-blog.git">
                 repository
               </a>{' '}
               for this blog.
