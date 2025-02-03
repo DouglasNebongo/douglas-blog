@@ -7,7 +7,7 @@ const siteMetadata = {
   description:
     'A space where I document my programming journey, sharing lessons, insights, and resources for fellow developers.',
   language: 'en-us',
-  theme: 'system', // system, dark or light
+  theme: 'dark', // system, dark or light
   siteUrl: 'https://www.vercel.com',
   siteRepo: 'https://www.github.com',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
