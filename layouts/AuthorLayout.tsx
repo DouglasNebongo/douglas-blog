@@ -95,15 +95,6 @@ export default function AuthorLayout({ children, content }: Props) {
               <a target="_blank" href="https://tailwindcss.com/">
                 Tailwind CSS
               </a>{' '}
-              using <strong>Tailwind Nextjs Starter Blog</strong>.
-            </p>
-
-            <p className="text-gray-500 dark:text-gray-200">
-              Immense thanks to{' '}
-              <a href="https://twitter.com/timlrxx" target="_blank">
-                Timothy Lin
-              </a>{' '}
-              for the minimal, lightweight, and super easy-to-customize blog starter.
             </p>
             <p className="text-gray-500 dark:text-gray-200">
               See my{' '}
