@@ -5,7 +5,7 @@ export const EXPERIENCES = [
     org: 'ForALL Founders Inc.',
     url: 'https://www.tefaafrik.com/',
     logo: '/static/images/experience/logotefa.png',
-    start: 'Apr 2021',
+    start: 'Apr 2022',
     end: 'March 2025',
     title: 'Fullstack Developer',
     icon: 'man-technologist',
