@@ -33,7 +33,7 @@ const PROJECTS: Project[] = [
     description: `Web app designed to help contractors manage clients, track invoices and analyze earnings`,
     imgSrc: '/static/images/sale-price-tag-96.png',
     builtWith: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React', 'PostgreSQL', 'Prisma', 'Redis'],
-    links: [{ title: 'Github', url: 'https://github.com/DouglasNebongo/Dashboard' }],
+    links: [{ title: 'Github', url: 'https://github.com/DouglasNebongo/Dashboard' }, { title:'Web app', url: 'https://ledgercloud.org/' }],
   },
 ]
 
