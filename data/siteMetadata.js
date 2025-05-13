@@ -8,14 +8,14 @@ const siteMetadata = {
     'A space where I document my programming journey, sharing lessons, insights, and resources for fellow developers.',
   language: 'en-us',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://www.vercel.com',
-  siteRepo: 'https://www.github.com',
+  siteUrl: 'https://dougn.dev',
+  siteRepo: 'https://bit.ly/4jSDndu',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'mnebongo@gmail.com',
   github: 'http://bit.ly/3EishOZ',
   x: 'https://bit.ly/3Cpu30j',
-  linkedin: 'https://bit.ly/3El306M',
+  linkedin: 'http://bit.ly/4doSGIz',
   locale: 'en-US',
   stickyNav: true,
 }
