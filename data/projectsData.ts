@@ -25,7 +25,7 @@ const PROJECTS: Project[] = [
     description: `My home on the web. This site works as a portfolio, a place to share code and thoughts.`,
     imgSrc: '/static/images/sale-price-tag-96.png',
     builtWith: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Markdown', 'React'],
-    links: [{ title: 'Github', url: 'https://github.com/DouglasNebongo/doug-blog.git' }],
+    links: [{ title: 'Github', url: 'https://github.com/DouglasNebongo/douglas-blog' }],
   },
   {
     type: 'self',
