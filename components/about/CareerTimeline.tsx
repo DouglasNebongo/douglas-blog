@@ -6,8 +6,8 @@ export const EXPERIENCES = [
     url: 'https://www.tefaafrik.com/',
     logo: '/static/images/experience/logotefa.png',
     start: 'June 2024',
-    end: 'Dec 2024',
-    title: '',
+    end: 'Aug 2025',
+    title: 'Bilingual System Support Professional',
     icon: 'man-technologist',
     event: 'career-tefa',
     details: () => {
@@ -41,9 +41,9 @@ export const EXPERIENCES = [
     org: 'ForALL Founders Inc.',
     url: 'https://www.tefaafrik.com/',
     logo: '/static/images/experience/logotefa.png',
-    start: 'July 2021',
+    start: 'Dec 2018',
     end: 'June 2024',
-    title: '',
+    title: 'System Architect - Bilingual Customer Support',
     icon: 'man-technologist',
     event: 'career-tefa',
     details: () => {
